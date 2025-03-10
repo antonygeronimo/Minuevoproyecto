@@ -384,6 +384,7 @@ nav ul li {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    width: 50px;
 }
 
 .testimonial-image img {
