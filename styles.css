@@ -41,6 +41,9 @@ h1 {
 h2 {
     font-size: 2rem;
     margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 750;
+    font-style: normal;
 
 }
 
