@@ -164,10 +164,10 @@ nav ul li {
 
 .hero-image {
     margin: 0 auto;
-    max-width: 800px;
-    border-radius: 10px;
+    max-width: 900px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .hero-image img {
@@ -692,3 +692,4 @@ img {
 .tidio-chat-iframe {
     bottom: 70px !important; /* Asegura espacio para el botón de traducción */
 }
+
