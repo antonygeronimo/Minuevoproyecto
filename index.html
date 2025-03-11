@@ -14,8 +14,8 @@
     <!-- Precargar AOS CSS pero cargar JS al final -->
     <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    <title>Dalton - Comunicación y Colaboración</title>
 </head>
-
 
 <body>
     <!-- Sección de Encabezado -->
@@ -23,8 +23,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPDQysR7cORNS5OJki7hJAtWgxnrJ_kQJrQ&s" alt="" width="30" height="30">
-                    <span>alton</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPDQysR7cORNS5OJki7hJAtWgxnrJ_kQJrQ&s" alt="Logo Dalton" width="30" height="30">
+                    <span>Dalton</span>
                 </div>
                 <nav>
                     <ul>
@@ -198,7 +198,7 @@
                         <p><strong>Geronimo arotinco</strong></p>
                         <p>Director general</p>
                         <div class="company-logo">
-                            <img src="https://c0.klipartz.com/pngpicture/249/992/gratis-png-pago-payoneer-banco-transferencia-electronica-de-fondos-negocio-banco-thumbnail.png">
+                            <img src="https://c0.klipartz.com/pngpicture/249/992/gratis-png-pago-payoneer-banco-transferencia-electronica-de-fondos-negocio-banco-thumbnail.png" alt="Logo de compañía" width="100" height="40">
                         </div>
                     </div>
                 </div>
@@ -244,8 +244,8 @@
             <div class="footer-content">
                 <div class="footer-column brand" data-aos="fade-up" data-aos-delay="100">
                     <div class="logo">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPDQysR7cORNS5OJki7hJAtWgxnrJ_kQJrQ&s" alt="Logo de affon" width="30" height="30">
-                        <span>affon</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPDQysR7cORNS5OJki7hJAtWgxnrJ_kQJrQ&s" alt="Logo de Dalton" width="30" height="30">
+                        <span>Dalton</span>
                     </div>
                     <p>Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo. Conéctate en cualquier lugar, en cualquier momento.</p>
                     <div class="social-icons">
@@ -291,50 +291,35 @@
         </div>
     </footer>
 
+    <!-- Contenedor del botón para traducir -->
+    <div class="translation-container">
+        <button id="translateButton" class="btn-translate">🌐 English</button>
+    </div>
 
-    <!-- Scripts optimizados -->
-    <script src="script.js" defer></script>
-    
-    <!-- Cargar AOS al final -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-    
-    <!-- Script optimizado para inicializar AOS y traducción -->
+    <!-- Contenedor del widget de traducción -->
+    <div id="google_translate_element"></div>
+
+    <!-- Script para inicializar Google Translate Widget -->
     <script>
-        // Inicializar AOS solo cuando la página esté completamente cargada
-        document.addEventListener('DOMContentLoaded', function() {
-            // Inicializar AOS con menos animaciones
-            setTimeout(function() {
-                AOS.init({
-                    once: true,
-                    offset: 100,
-                    duration: 800,
-                    disable: window.innerWidth < 768 // Desactivar en móviles
-                });
-            }, 500);
-        });
-
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es', // Idioma original de la página
+                includedLanguages: 'en,es', // Idiomas permitidos
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
     </script>
 
-<script>
-    // Función que traduce la página al inglés
-    function translatePage() {
-        document.body.innerHTML = document.body.innerHTML.replace("Hola", "Hello");
-        document.body.innerHTML = document.body.innerHTML.replace("Bienvenido", "Welcome");
-        document.body.innerHTML = document.body.innerHTML.replace("Gracias", "Thank you");
-    }
-  
-    // Escuchar mensajes desde el chatbot
-    window.addEventListener("message", function(event) {
-        console.log("Mensaje recibido:", event.data);
-        
-        if (event.data.action === "translatePage") {
-            translatePage();
-        }
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init();
     });
-  </script>
+    </script>
 
+    <!-- Script del widget oficial (sin API Key) -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script src="//code.tidio.co/ammc0mgeztkd76u9vhn7xzc8lib0348m.js" async></script>
-  
+    <script src="//code.tidio.co/ammc0mgeztkd76u9vhn7xzc8lib0348m.js" async></script>
 </body>
 </html>
