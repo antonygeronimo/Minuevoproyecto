@@ -202,11 +202,15 @@ nav ul li {
     color: #666;
 }
 
+/* Estilos para la sección de logos con animación */
 .partner-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    overflow: hidden; /* Oculta los logos que están fuera del contenedor */
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
 
 .partner-logos img {
@@ -214,13 +218,33 @@ nav ul li {
     margin: 10px 20px;
     opacity: 0.7;
     filter: grayscale(100%);
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    animation: slideInFromRight 1s ease-out forwards; /* Animación de entrada */
 }
 
 .partner-logos img:hover {
     opacity: 1;
     filter: grayscale(0%);
 }
+
+/* Animación para que los logos aparezcan desde la derecha */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+        opacity: 0; /* Inicia invisible */
+    }
+    100% {
+        transform: translateX(0); /* Termina en su posición original */
+        opacity: 0.7; /* Termina visible */
+    }
+}
+
+/* Retraso en la animación para cada logo */
+.partner-logos img:nth-child(1) { animation-delay: 0s; }
+.partner-logos img:nth-child(2) { animation-delay: 0.2s; }
+.partner-logos img:nth-child(3) { animation-delay: 0.4s; }
+.partner-logos img:nth-child(4) { animation-delay: 0.6s; }
+.partner-logos img:nth-child(5) { animation-delay: 0.8s; }
 
 /* Features Section - Optimizado */
 .features {
@@ -476,6 +500,10 @@ nav ul li {
     display: inline-flex;
     align-items: center;
     transition: color 0.3s ease;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .read-more i {
@@ -677,3 +705,58 @@ img {
     bottom: 70px !important; /* Asegura espacio para el botón de traducción */
 }
 
+/* Estilos para el carousel infinito de logos */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content; /* Ancho total de todos los logos */
+    animation: scroll 20s linear infinite; /* Animación infinita */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin: 0 20px;
+}
+
+.carousel-item img {
+    height: 40px;
+    width: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.carousel-item img:hover {
+    filter: grayscale(0%);
+}
+
+/* Animación para el desplazamiento infinito */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Comienza en la posición inicial */
+    }
+    100% {
+        transform: translateX(-50%); /* Desplaza hacia la izquierda */
+    }
+} 
+
+.btn-translate {
+    background-color: #4361ee;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.btn-translate:hover {
+    background-color: #3651d4;
+}
