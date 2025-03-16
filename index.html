@@ -24,19 +24,20 @@
             <div class="header-content">
                 <div class="logo">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPDQysR7cORNS5OJki7hJAtWgxnrJ_kQJrQ&s" alt="Logo Dalton" width="30" height="30">
-                    <span>Dalton</span>
+                    <span data-lang-es="Dalton" data-lang-en="Dalton">Dalton</span>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#" class="nav-link">Inicio</a></li>
-                        <li><a href="#" class="nav-link">Nosotros</a></li>
-                        <li><a href="#" class="nav-link">Equipos</a></li>
-                        <li><a href="#" class="nav-link">Blog</a></li>
-                        <li><a href="#" class="nav-link">Contacto</a></li>
+                        <li><a href="#" class="nav-link" data-lang-es="Inicio" data-lang-en="Home">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-lang-es="Nosotros" data-lang-en="About Us">Nosotros</a></li>
+                        <li><a href="#" class="nav-link" data-lang-es="Equipos" data-lang-en="Teams">Equipos</a></li>
+                        <li><a href="#" class="nav-link" data-lang-es="Blog" data-lang-en="Blog">Blog</a></li>
+                        <li><a href="#" class="nav-link" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="cta-button">
-                    <a href="registro.html" class="btn-descargar">Descargar ahora</a>
+                    <a href="registro.html" class="btn-descargar" data-lang-es="Descargar ahora" data-lang-en="Download Now">Descargar ahora</a>
+                    <button id="languageButton" class="btn-translate">🌐 English</button>
                 </div>
             </div>
         </div>
@@ -46,9 +47,9 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="animated-text">Conéctate en cualquier lugar, en cualquier momento</h1>
-                <p class="animated-text">Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo.</p>
-                <a href="#" class="btn-primary">Comenzar</a>
+                <h1 class="animated-text" data-lang-es="Conéctate en cualquier lugar, en cualquier momento" data-lang-en="Connect anywhere, anytime">Conéctate en cualquier lugar, en cualquier momento</h1>
+                <p class="animated-text" data-lang-es="Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo." data-lang-en="We facilitate communication with advanced tools for video calls, messaging, and team collaboration.">Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo.</p>
+                <a href="#" class="btn-primary" data-lang-es="Comenzar" data-lang-en="Get Started">Comenzar</a>
             </div>
             <div class="hero-image" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
                 <img src="https://trueconf.com/images/landing/video-llamada/videollamada.png" alt="Interfaz de videollamada" loading="lazy" width="800" height="450">
@@ -59,13 +60,42 @@
     <!-- Sección de Confianza -->
     <section class="trusted-by">
         <div class="container">
-            <p data-aos="fade-up">Confiado por más de <strong>50,000</strong> tiendas/usuarios en todo el mundo</p>
-            <div class="partner-logos" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://1000marcas.net/wp-content/uploads/2020/02/YouTube-logo.png" alt="Demo1" loading="lazy" width="120" height="40">
-                <img src="https://freelogopng.com/images/all_img/1655873659shopify-black-logo.png" alt="Shopify" loading="lazy" width="120" height="40">
-                <img src="https://static.vecteezy.com/system/resources/previews/007/978/619/non_2x/google-logo-illustration-free-vector.jpg" alt="PointPixel" loading="lazy" width="120" height="40">
-                <img src="https://cdn.worldvectorlogo.com/logos/spotify-logo.svg" alt="Demo2" loading="lazy" width="120" height="40">
-                <img src="https://filecache.mediaroom.com/mr5mr_paypal_latam/177465/pp_h_rgb_logo_tn.jpg" alt="PayPal" loading="lazy" width="120" height="40">
+            <p data-aos="fade-up" data-lang-es="Confiado por más de <strong>50,000</strong> tiendas/usuarios en todo el mundo" data-lang-en="Trusted by over <strong>50,000</strong> stores/users worldwide">Confiado por más de <strong>50,000</strong> tiendas/usuarios en todo el mundo</p>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Logos (primera fila) -->
+                    <div class="carousel-item">
+                        <img src="https://1000marcas.net/wp-content/uploads/2020/02/YouTube-logo.png" alt="YouTube" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://freelogopng.com/images/all_img/1655873659shopify-black-logo.png" alt="Shopify" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.vecteezy.com/system/resources/previews/007/978/619/non_2x/google-logo-illustration-free-vector.jpg" alt="Google" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.worldvectorlogo.com/logos/spotify-logo.svg" alt="Spotify" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://filecache.mediaroom.com/mr5mr_paypal_latam/177465/pp_h_rgb_logo_tn.jpg" alt="PayPal" loading="lazy" width="120" height="40">
+                    </div>
+                    <!-- Logos duplicados (segunda fila) -->
+                    <div class="carousel-item">
+                        <img src="https://1000marcas.net/wp-content/uploads/2020/02/YouTube-logo.png" alt="YouTube" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://freelogopng.com/images/all_img/1655873659shopify-black-logo.png" alt="Shopify" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.vecteezy.com/system/resources/previews/007/978/619/non_2x/google-logo-illustration-free-vector.jpg" alt="Google" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.worldvectorlogo.com/logos/spotify-logo.svg" alt="Spotify" loading="lazy" width="120" height="40">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://filecache.mediaroom.com/mr5mr_paypal_latam/177465/pp_h_rgb_logo_tn.jpg" alt="PayPal" loading="lazy" width="120" height="40">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -74,30 +104,30 @@
     <section class="features">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>Revisa Todas las Características</h2>
-                <p>Descubre herramientas diseñadas para mejorar la comunicación y el trabajo en equipo.</p>
+                <h2 data-lang-es="Revisa Todas las Características" data-lang-en="Check All Features">Revisa Todas las Características</h2>
+                <p data-lang-es="Descubre herramientas diseñadas para mejorar la comunicación y el trabajo en equipo." data-lang-en="Discover tools designed to enhance communication and teamwork.">Descubre herramientas diseñadas para mejorar la comunicación y el trabajo en equipo.</p>
             </div>
             <div class="feature-cards">
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon blue">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3>Llamadas de audio y video HD</h3>
-                    <p>Hemos mejorado la estabilidad y velocidad de la plataforma.</p>
+                    <h3 data-lang-es="Llamadas de audio y video HD" data-lang-en="HD Audio and Video Calls">Llamadas de audio y video HD</h3>
+                    <p data-lang-es="Hemos mejorado la estabilidad y velocidad de la plataforma." data-lang-en="We have improved the stability and speed of the platform.">Hemos mejorado la estabilidad y velocidad de la plataforma.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon cyan">
                         <i class="fas fa-desktop"></i>
                     </div>
-                    <h3>Compartir pantalla</h3>
-                    <p>Hemos mejorado la estabilidad y velocidad de la plataforma.</p>
+                    <h3 data-lang-es="Compartir pantalla" data-lang-en="Screen Sharing">Compartir pantalla</h3>
+                    <p data-lang-es="Hemos mejorado la estabilidad y velocidad de la plataforma." data-lang-en="We have improved the stability and speed of the platform.">Hemos mejorado la estabilidad y velocidad de la plataforma.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon purple">
                         <i class="fas fa-comment-dots"></i>
                     </div>
-                    <h3>Mensajería inteligente</h3>
-                    <p>Hemos mejorado la estabilidad y velocidad de la plataforma.</p>
+                    <h3 data-lang-es="Mensajería inteligente" data-lang-en="Smart Messaging">Mensajería inteligente</h3>
+                    <p data-lang-es="Hemos mejorado la estabilidad y velocidad de la plataforma." data-lang-en="We have improved the stability and speed of the platform.">Hemos mejorado la estabilidad y velocidad de la plataforma.</p>
                 </div>
             </div>
         </div>
@@ -107,8 +137,8 @@
     <section class="why-us">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>¿Por Qué Elegirnos?</h2>
-                <p>Dalton ofrece una plataforma intuitiva y eficiente para mejorar la productividad.</p>
+                <h2 data-lang-es="¿Por Qué Elegirnos?" data-lang-en="Why Choose Us?">¿Por Qué Elegirnos?</h2>
+                <p data-lang-es="Dalton ofrece una plataforma intuitiva y eficiente para mejorar la productividad." data-lang-en="Dalton offers an intuitive and efficient platform to improve productivity.">Dalton ofrece una plataforma intuitiva y eficiente para mejorar la productividad.</p>
             </div>
             <div class="why-us-content">
                 <div class="why-us-image" data-aos="fade-right" data-aos-duration="1000">
@@ -120,7 +150,7 @@
                             <i class="fas fa-video"></i>
                         </div>
                         <div class="feature-text">
-                            <h3>Reuniones por Video</h3>
+                            <h3 data-lang-es="Reuniones por Video" data-lang-en="Video Meetings">Reuniones por Video</h3>
                         </div>
                     </div>
                     <div class="feature-item" data-aos="fade-left" data-aos-delay="200">
@@ -128,7 +158,7 @@
                             <i class="fas fa-volume-up"></i>
                         </div>
                         <div class="feature-text">
-                            <h3>Audio Mejorado</h3>
+                            <h3 data-lang-es="Audio Mejorado" data-lang-en="Enhanced Audio">Audio Mejorado</h3>
                         </div>
                     </div>
                     <div class="feature-item" data-aos="fade-left" data-aos-delay="300">
@@ -136,8 +166,8 @@
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="feature-text">
-                            <h3>Estadísticas en Vivo</h3>
-                            <p>La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</p>
+                            <h3 data-lang-es="Estadísticas en Vivo" data-lang-en="Live Statistics">Estadísticas en Vivo</h3>
+                            <p data-lang-es="La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado." data-lang-en="Project management is the most valuable business solution I have EVER purchased.">La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</p>
                         </div>
                     </div>
                     <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
@@ -145,7 +175,7 @@
                             <i class="fas fa-microphone"></i>
                         </div>
                         <div class="feature-text">
-                            <h3>Grabación de Llamadas</h3>
+                            <h3 data-lang-es="Grabación de Llamadas" data-lang-en="Call Recording">Grabación de Llamadas</h3>
                         </div>
                     </div>
                 </div>
@@ -158,9 +188,9 @@
         <div class="container">
             <div class="collaboration-content">
                 <div class="collaboration-text" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>Impulsando la colaboración y productividad</h2>
-                    <p>La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</p>
-                    <a href="#" class="btn-primary">Comenzar</a>
+                    <h2 data-lang-es="Impulsando la colaboración y productividad" data-lang-en="Driving Collaboration and Productivity">Impulsando la colaboración y productividad</h2>
+                    <p data-lang-es="La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado." data-lang-en="Project management is the most valuable business solution I have EVER purchased.">La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</p>
+                    <a href="#" class="btn-primary" data-lang-es="Comenzar" data-lang-en="Get Started">Comenzar</a>
                 </div>
                 <div class="collaboration-image" data-aos="fade-left" data-aos-duration="1000">
                     <img src="https://escueladedatos.online/wp-content/uploads/2020/03/Estadistica-Basica.jpg" alt="Gráfico de Estadísticas" loading="lazy" width="600" height="400">
@@ -177,9 +207,9 @@
                     <img src="https://www.digitalbizmagazine.com/wp-content/uploads/2018/05/iStock-668218754-1068x712.jpg" alt="Pantallas Móviles" loading="lazy" width="600" height="400">
                 </div>
                 <div class="collaboration-text" data-aos="fade-left" data-aos-duration="1000">
-                    <h2>Impulsando la colaboración y productividad</h2>
-                    <p>La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</p>
-                    <a href="#" class="btn-primary">Comenzar</a>
+                    <h2 data-lang-es="Impulsando la colaboración y productividad" data-lang-en="Driving Collaboration and Productivity">Impulsando la colaboración y productividad</h2>
+                    <p data-lang-es="La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado." data-lang-en="Project management is the most valuable business solution I have EVER purchased.">La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</p>
+                    <a href="#" class="btn-primary" data-lang-es="Comenzar" data-lang-en="Get Started">Comenzar</a>
                 </div>
             </div>
         </div>
@@ -193,10 +223,10 @@
                     <div class="quote-icon">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <h3>La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</h3>
+                    <h3 data-lang-es="La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado." data-lang-en="Project management is the most valuable business solution I have EVER purchased.">La gestión de proyectos es la solución empresarial más valiosa que JAMÁS he comprado.</h3>
                     <div class="testimonial-author">
                         <p><strong>Geronimo arotinco</strong></p>
-                        <p>Director general</p>
+                        <p data-lang-es="Director general" data-lang-en="General Manager">Director general</p>
                         <div class="company-logo">
                             <img src="https://c0.klipartz.com/pngpicture/249/992/gratis-png-pago-payoneer-banco-transferencia-electronica-de-fondos-negocio-banco-thumbnail.png" alt="Logo de compañía" width="100" height="40">
                         </div>
@@ -213,8 +243,8 @@
     <section class="latest-news">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>Últimas Noticias</h2>
-                <p>Mantente informado sobre nuestras novedades y mejoras.</p>
+                <h2 data-lang-es="Últimas Noticias" data-lang-en="Latest News">Últimas Noticias</h2>
+                <p data-lang-es="Mantente informado sobre nuestras novedades y mejoras." data-lang-en="Stay informed about our updates and improvements.">Mantente informado sobre nuestras novedades y mejoras.</p>
             </div>
             <div class="news-cards">
                 <div class="news-card" data-aos="fade-up" data-aos-delay="100">
@@ -222,13 +252,13 @@
                 </div>
                 <div class="news-card featured" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-content">
-                        <h3>Actualización de la Experiencia de Página de Google que se lanzará en mayo de 2021 y 2022</h3>
+                        <h3 data-lang-es="Actualización de la Experiencia de Página de Google que se lanzará en mayo de 2021 y 2022" data-lang-en="Google Page Experience Update to Launch in May 2021 and 2022">Actualización de la Experiencia de Página de Google que se lanzará en mayo de 2021 y 2022</h3>
                         <div class="card-meta">
                             <span><i class="far fa-user"></i> Admin</span>
                             <span><i class="far fa-calendar"></i> 14 Enero, 2022</span>
                         </div>
-                        <p>Hemos mejorado la estabilidad y velocidad de la plataforma. Esta actualización incluye nuevas características para optimizar la comunicación entre equipos y mejorar la productividad.</p>
-                        <a href="#" class="read-more">Leer Más <i class="fas fa-arrow-right"></i></a>
+                        <p data-lang-es="Hemos mejorado la estabilidad y velocidad de la plataforma. Esta actualización incluye nuevas características para optimizar la comunicación entre equipos y mejorar la productividad." data-lang-en="We have improved the stability and speed of the platform. This update includes new features to optimize team communication and improve productivity.">Hemos mejorado la estabilidad y velocidad de la plataforma. Esta actualización incluye nuevas características para optimizar la comunicación entre equipos y mejorar la productividad.</p>
+                        <a href="#" class="read-more" data-lang-es="Leer Más" data-lang-en="Read More">Leer Más <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="news-card" data-aos="fade-up" data-aos-delay="300">
@@ -245,9 +275,9 @@
                 <div class="footer-column brand" data-aos="fade-up" data-aos-delay="100">
                     <div class="logo">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPDQysR7cORNS5OJki7hJAtWgxnrJ_kQJrQ&s" alt="Logo de Dalton" width="30" height="30">
-                        <span>Dalton</span>
+                        <span data-lang-es="Dalton" data-lang-en="Dalton">Dalton</span>
                     </div>
-                    <p>Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo. Conéctate en cualquier lugar, en cualquier momento.</p>
+                    <p data-lang-es="Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo. Conéctate en cualquier lugar, en cualquier momento." data-lang-en="We facilitate communication with advanced tools for video calls, messaging, and team collaboration. Connect anywhere, anytime.">Facilitamos la comunicación con herramientas avanzadas para videollamadas, mensajería y colaboración en equipo. Conéctate en cualquier lugar, en cualquier momento.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -256,59 +286,41 @@
                     </div>
                 </div>
                 <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
-                    <h4>RECURSOS</h4>
+                    <h4 data-lang-es="RECURSOS" data-lang-en="RESOURCES">RECURSOS</h4>
                     <ul>
-                        <li><a href="#">Descargar Apps</a></li>
-                        <li><a href="#">Centro de Ayuda</a></li>
-                        <li><a href="#">Productividad</a></li>
-                        <li><a href="#">Métodos</a></li>
-                        <li><a href="#">Invitar a un Amigo</a></li>
-                        <li><a href="#">Integraciones</a></li>
+                        <li><a href="#" data-lang-es="Descargar Apps" data-lang-en="Download Apps">Descargar Apps</a></li>
+                        <li><a href="#" data-lang-es="Centro de Ayuda" data-lang-en="Help Center">Centro de Ayuda</a></li>
+                        <li><a href="#" data-lang-es="Productividad" data-lang-en="Productivity">Productividad</a></li>
+                        <li><a href="#" data-lang-es="Métodos" data-lang-en="Methods">Métodos</a></li>
+                        <li><a href="#" data-lang-es="Invitar a un Amigo" data-lang-en="Invite a Friend">Invitar a un Amigo</a></li>
+                        <li><a href="#" data-lang-es="Integraciones" data-lang-en="Integrations">Integraciones</a></li>
                     </ul>
                 </div>
                 <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
-                    <h4>PRODUCTO</h4>
+                    <h4 data-lang-es="PRODUCTO" data-lang-en="PRODUCT">PRODUCTO</h4>
                     <ul>
-                        <li><a href="#">Cómo Funciona</a></li>
-                        <li><a href="#">Iniciar Sesión</a></li>
-                        <li><a href="#">Obtenerlo Gratis</a></li>
-                        <li><a href="#">Tareas</a></li>
-                        <li><a href="#">Gestión</a></li>
-                        <li><a href="#">Historias Semanales</a></li>
+                        <li><a href="#" data-lang-es="Cómo Funciona" data-lang-en="How It Works">Cómo Funciona</a></li>
+                        <li><a href="#" data-lang-es="Iniciar Sesión" data-lang-en="Log In">Iniciar Sesión</a></li>
+                        <li><a href="#" data-lang-es="Obtenerlo Gratis" data-lang-en="Get It Free">Obtenerlo Gratis</a></li>
+                        <li><a href="#" data-lang-es="Tareas" data-lang-en="Tasks">Tareas</a></li>
+                        <li><a href="#" data-lang-es="Gestión" data-lang-en="Management">Gestión</a></li>
+                        <li><a href="#" data-lang-es="Historias Semanales" data-lang-en="Weekly Stories">Historias Semanales</a></li>
                     </ul>
                 </div>
                 <div class="footer-column" data-aos="fade-up" data-aos-delay="400">
-                    <h4>NOSOTROS</h4>
+                    <h4 data-lang-es="NOSOTROS" data-lang-en="ABOUT US">NOSOTROS</h4>
                     <ul>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Estamos Contratando</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Prensa</a></li>
-                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#" data-lang-es="Sobre Nosotros" data-lang-en="About Us">Sobre Nosotros</a></li>
+                        <li><a href="#" data-lang-es="Estamos Contratando" data-lang-en="We're Hiring">Estamos Contratando</a></li>
+                        <li><a href="#" data-lang-es="Blog" data-lang-en="Blog">Blog</a></li>
+                        <li><a href="#" data-lang-es="Prensa" data-lang-en="Press">Prensa</a></li>
+                        <li><a href="#" data-lang-es="Equipo" data-lang-en="Team">Equipo</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Contenedor del botón para traducir -->
-    <div class="translation-container">
-        <button id="translateButton" class="btn-translate">🌐 English</button>
-    </div>
-
-    <!-- Contenedor del widget de traducción -->
-    <div id="google_translate_element"></div>
-
-    <!-- Script para inicializar Google Translate Widget -->
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es', // Idioma original de la página
-                includedLanguages: 'en,es', // Idiomas permitidos
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -317,9 +329,30 @@
     });
     </script>
 
-    <!-- Script del widget oficial (sin API Key) -->
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <script src="//code.tidio.co/ammc0mgeztkd76u9vhn7xzc8lib0348m.js" async></script>
+
+    <!-- Script para manejar el cambio de idioma -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageButton = document.getElementById('languageButton');
+            const elementsToTranslate = document.querySelectorAll('[data-lang-es], [data-lang-en]');
+
+            languageButton.addEventListener('click', function() {
+                const currentLang = document.documentElement.lang;
+                const newLang = currentLang === 'es' ? 'en' : 'es';
+
+                document.documentElement.lang = newLang;
+                languageButton.textContent = newLang === 'es' ? '🌐 English' : '🌐 Español';
+
+                elementsToTranslate.forEach(element => {
+                    if (newLang === 'es') {
+                        element.textContent = element.getAttribute('data-lang-es');
+                    } else {
+                        element.textContent = element.getAttribute('data-lang-en');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
