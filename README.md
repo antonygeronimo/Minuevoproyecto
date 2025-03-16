@@ -4,7 +4,7 @@
 DALTON es una plataforma web moderna y responsiva diseñada para facilitar la comunicación y colaboración en equipo. Desarrollada con **HTML5, CSS3 y JavaScript**, esta aplicación ofrece herramientas avanzadas como videollamadas HD, mensajería inteligente y compartir pantalla.
 
 🚀 ¿Quieres explorar una plataforma moderna?  
-👉 [WordSnap en Netlify](https://link-a-tu-web.netlify.app)
+👉 [WordSnap en Netlify](https://taupe-lollipop-17400e.netlify.app/)
 
 ---
 
@@ -28,11 +28,11 @@ DALTON es una plataforma web moderna y responsiva diseñada para facilitar la co
 ## 📸 CAPTURAS DE PANTALLA:
 
 ### Página principal
-(![pagian principal imagen](https://github.com/user-attachments/assets/26402da0-c392-4c9f-840f-de4365175997)
-)
+![pagian principal imagen](https://github.com/user-attachments/assets/26402da0-c392-4c9f-840f-de4365175997)
+
 
 ### Diseño Responsivo
-
+![image](https://github.com/user-attachments/assets/181bc530-4e9f-4195-8118-28ffca5904b1)
 
 ---
 
