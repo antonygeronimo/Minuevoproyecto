@@ -52,6 +52,7 @@ Preload de recursos críticos.
 CAPTURAS DE PANTALLA:
 
 Pagina principal
+
 ![image](https://github.com/user-attachments/assets/be8066b0-6de5-4455-8caa-ff16484b79d2)
 
 Diseño Responsivo
@@ -62,19 +63,24 @@ Diseño Responsivo
 CONTRIBUCIÓN:
 ¡Las contribuciones son bienvenidas! Si deseas contribuir, sigue estos pasos:
 
-Haz un fork del repositorio.
-Crea una nueva rama 
-Realiza tus cambios y haz commit 
-Haz push a la rama 
-Abre un Pull Request.
+-Haz un fork del repositorio.
+-Crea una nueva rama 
+-Realiza tus cambios y haz commit 
+-Haz push a la rama 
+-Abre un Pull Request.
 
 Contacto
+
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
-Nombre: Geronimo Arotinco, Renzo Antony
-Email: renzoantony4@gmail.com
-LinkedIn: www.linkedin.com/in/renzogeronimo
-GitHub: https://github.com/antonygeronimo
+Nombre: 
+Geronimo Arotinco, Renzo Antony
+Email: 
+renzoantony4@gmail.com
+LinkedIn: 
+www.linkedin.com/in/renzogeronimo
+GitHub: 
+https://github.com/antonygeronimo
 
 
 
