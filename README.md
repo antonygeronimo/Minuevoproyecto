@@ -54,10 +54,11 @@ Desarrollada con **HTML5, CSS3 y JavaScript**, esta aplicación ofrece herramien
 ## 📷 CAPTURAS DE PANTALLA:
 
 ### Página principal
-![Página principal](![image](https://github.com/user-attachments/assets/f065a5bf-54f4-42e9-80a8-7dcba986a8f5))
+![Página principal]()
 
 ### Diseño Responsivo
-![Diseño responsivo](![image](https://github.com/user-attachments/assets/128d4f90-7716-49e1-bc86-130d77032f69))
+![Diseño responsivo](![image](https://github.com/user-attachments/assets/7cbffb3b-3b95-48b7-84c2-9af233a31d9c)
+)
 
 ---
 
