@@ -189,7 +189,7 @@ nav ul li {
 
 /* Cuando pasas el mouse por encima */
 .hero-image:hover {
-    transform: scale(2.5); /* Se agranda un poco */
+    transform: scale(1.5); /* Se agranda un poco */
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2); /* Sombra más grande al hacer zoom */
 }
 
