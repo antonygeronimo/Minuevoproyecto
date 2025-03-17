@@ -184,12 +184,20 @@ nav ul li {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+/* Cuando pasas el mouse por encima */
+.hero-image:hover {
+    transform: scale(2.5); /* Se agranda un poco */
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2); /* Sombra más grande al hacer zoom */
 }
 
 .hero-image img {
     width: 100%;
     display: block;
 }
+
 
 /* Trusted By Section - Optimizado */
 .trusted-by {
